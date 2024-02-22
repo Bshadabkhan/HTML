@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .btn {
+            background-color: blueviolet;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: pink;
+        }
+        .message {
+            margin-top: 20px;
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Number Guessing Game</h1>
+        <p>Guess a number between 1 and 100:</p>
+        <input type="number" id="guess" min="1" max="100">
+        <button class="btn" onclick="guessNumber()">Submit Guess</button>
+        <p class="message" id="message"></p>
+    </div>
+</body>
+</html>
